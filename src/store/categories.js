@@ -1,8 +1,19 @@
 const initialState = {
   categoryList: [
-    {name: 'Books', description: 'All the books you want!'},
-    {name: 'Pets', description: 'Everything for your pets!'},
-    {name: 'Novelty', description: 'Everything else!'},
+    {
+      displayName: 'Books',
+      normalizedName: 'books', 
+      description: 'All the books you want!'
+    },
+    {
+      displayName: 'Pets',
+      normalizedName: 'pets', 
+      description: 'Everything for your pets!'
+    },
+    {
+      name: 'Novelty', 
+      description: 'Everything else!'
+    },
   ],
   activeCategory: '',
   activeDescription: '',
