@@ -13,7 +13,9 @@ The following user/developer stories detail the major functionality for this pha
 - As a user, I want to choose a category and see a list of all available products matching that category
 - As a user, I want a clean, easy to use user interface so that I can shop the online store with confidence
 
-## Phase 1 Tech
+## Phase 1 Notes
+
+User Stories: 
 
 - Create a visually appealing site using Material UI
 - Use a Redux Store to manage the state of categories and items in the store
@@ -21,8 +23,6 @@ The following user/developer stories detail the major functionality for this pha
 - When the user selects (clicks on) a category …
 - Identify that category as selected (change of class/display)
 - Show a list of products associated with the category
-
-## Phase 1 Notes
 
 - Categories
   - State should contain a list of categories as well as the active category
@@ -38,6 +38,29 @@ The following user/developer stories detail the major functionality for this pha
 - Active Category
   - State should store active category
 - Other components (products, etc) might need to reference this
+
+## Phase 2 Notes
+
+Adding the following new user stories to meet the new requirements.
+
+- As a user, I want to choose from products in the list and add them to my shopping cart
+- As a user, I want to see the products that I’ve added to my shopping cart so that
+- As a user, I want to change the quantity of items I intend to purchase in my shopping cart
+- As a user, I want to be able to remove an item from my shopping cart
+
+Application Flow:
+
+- User sees a list of categories
+  - Chooses a category and sees a list of products
+  - Clicks the “Add to Cart” button on any product
+  - Clicks the “Cart” link in the header
+  - Sees a list of all products in the cart
+  - Clicks the delete button on an item and sees the item removed
+  - Changes the quantity selector on an item and sees the cart total change
+
+- Continue to use Material UI Components for layout and styling
+- Add a “Cart” indicator to the header, like this: Cart (0)
+- Create a new Cart component to show the items in the user’s cart
 
 ## UML
 
