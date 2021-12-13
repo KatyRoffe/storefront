@@ -10,6 +10,7 @@ const chooseCategory = (props) => {
       <Button id="books" variant="contained" color="info" onClick={() => props.active('Books', 'Books')}>Books</Button>
       <Button id="pets" variant="contained" color="info" onClick={() => props.active('Pets', 'Pets')}>Pets</Button>
       <Button id="novelty" variant="contained" color="info" onClick={() => props.active('Novelty', 'Novelty')}>Novelty</Button>
+      <Typography id="p-tag" variant="p" component="p"> {props.activeDescription} </Typography>
     </>
   )
 }
