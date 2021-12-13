@@ -1,4 +1,5 @@
-import { createStore, combineReducers } from 'redux';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
 
 import { composeWithDevTools } from 'redux-devtools-extension';
 import cartReducer from './cart.js';
@@ -11,9 +12,9 @@ const reducers = combineReducers({
   cart: cartReducer,
 })
 
-
+// STOAGE NOT STOREFRONT BECAUSE KATY KEEPS FORGETTING
 const store = () => {
-  return createStore(reducers, composeWithDevTools());
+  return createStore(reducers, composeWithDevTools(), applyMiddleware(thunk));
 }
 
 export default store;
