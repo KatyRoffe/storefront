@@ -62,6 +62,21 @@ Application Flow:
 - Add a “Cart” indicator to the header, like this: Cart (0)
 - Create a new Cart component to show the items in the user’s cart
 
+## Phase 3 Notes
+
+- As a user, I want to interact with live inventory so that I have confidence that the displayed products are in stock
+- As a user, I want to know to that when I add an item to my cart, that it is removed from inventory so that no other users can purchase it
+
+- Continue to use Material UI Components for layout and styling
+- Load the category and product list from a remote API on page load.
+- Update the product quantity in stock when adding items to (or removing from) the cart
+- Continue to use multiple reducers
+
+- You will need to use `useEffect()` to dispatch a load action on the initial page load
+  - This will need to use `thunk` as it will be asynchronous
+- When adding/removing/updating items in the cart, the action/reducer will need to update the server
+  - Perform the appropriate `post`, `put`, or `delete` action via API call (using thunk in an async action) on each of these actions as performed by the users
+
 ## UML
 
 Coming as soon as I can figure out where I saved the image.....................
